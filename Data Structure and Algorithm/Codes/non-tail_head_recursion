@@ -1,0 +1,17 @@
+#include <stdio.h>  
+void head_fun (int num)  
+{  
+if ( num > 0 )  
+{  
+// Here the head_fun() is the first statement to be called  
+head_fun (num -1);  
+printf (" %d", num);  
+}  
+}  
+int main ()  
+{  
+int a = 5;  
+printf (" Use of Non-Tail/Head Recursive function \n");  
+head_fun (a); // function calling  
+return 0;  
+}  
